@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wind.simonview2.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.wind.simonview2.LinearGradientView
+                android:layout_width="match_parent"
+                android:layout_height="600dp" />
+            <include layout="@layout/view_line"/>
+            <com.wind.simonview2.RadiaGradientView
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <include layout="@layout/view_line"/>
+            <com.wind.simonview2.SweepGradientView
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <include layout="@layout/view_line"/>
+            <com.wind.simonview2.BitmapShaderView
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
